@@ -1,0 +1,11 @@
+<div class="home">
+    <h1>Welcome to Super Market</h1>
+    <p>If you want to go into the market</p>
+    <p>Please give me the ID number</p>
+    <input (input)="giveID()" [(ngModel)] = "userId" placeholder="input your id here">
+    <button [routerLink]="'/market-no-resolve'">Enter the market</button>
+    <button [routerLink]="'/market-resolve'">Enter the market - With Resolve Guard</button>
+    <button [routerLink]="'/supermarket'">Enter to Manage Page</button>
+
+
+</div>
